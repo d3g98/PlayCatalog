@@ -5,7 +5,7 @@ VisualStudioVersion = 17.5.33516.290
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{36827281-92F3-450A-8F2E-0BA78487E4D6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Play.Catalog.Serivce", "Play.Catalog.Serivce\Play.Catalog.Serivce.csproj", "{33EBE308-2969-4548-9004-FDC38BC056C0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Play.Catalog.Serivce", "Play.Catalog.Serivce\Play.Catalog.Serivce.csproj", "{33EBE308-2969-4548-9004-FDC38BC056C0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
