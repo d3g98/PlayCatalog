@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Play.Catalog.Serivce.Dtos;
 using Play.Catalog.Serivce.Entities;
-using Play.Catalog.Serivce.Repositories;
+using Play.Common;
 
 namespace Play.Catalog.Serivce.Controllers
 {
@@ -9,8 +9,8 @@ namespace Play.Catalog.Serivce.Controllers
     [ApiController]
     public class ItemsController : ControllerBase
     {
-        private readonly IItemsRepository _itemsRepository;
-        public ItemsController(IItemsRepository itemsRepository)
+        private readonly IRepository<Item> _itemsRepository;
+        public ItemsController(IRepository<Item> itemsRepository)
         {
             _itemsRepository = itemsRepository;
         }

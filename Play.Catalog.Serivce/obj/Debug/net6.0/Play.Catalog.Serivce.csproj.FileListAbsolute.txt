@@ -43,3 +43,4 @@ H:\NET.CORE\PlayCatalog\Play.Catalog.Serivce\bin\Debug\net6.0\ZstdSharp.dll
 H:\NET.CORE\PlayCatalog\Play.Catalog.Serivce\bin\Debug\net6.0\runtimes\linux\native\libmongocrypt.so
 H:\NET.CORE\PlayCatalog\Play.Catalog.Serivce\bin\Debug\net6.0\runtimes\osx\native\libmongocrypt.dylib
 H:\NET.CORE\PlayCatalog\Play.Catalog.Serivce\bin\Debug\net6.0\runtimes\win\native\mongocrypt.dll
+H:\NET.CORE\PlayCatalog\Play.Catalog.Serivce\bin\Debug\net6.0\Play.Common.dll

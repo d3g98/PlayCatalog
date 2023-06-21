@@ -208,6 +208,21 @@
           }
         }
       },
+      "Play.Common/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "MongoDB.Driver": "2.19.2"
+        },
+        "compile": {
+          "lib/net6.0/Play.Common.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/Play.Common.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
       "SharpCompress/0.30.1": {
         "type": "package",
         "compile": {
@@ -657,6 +672,17 @@
         "runtimes/win/native/mongocrypt.dll"
       ]
     },
+    "Play.Common/1.0.0": {
+      "sha512": "p97c+l6fQLwK1/3jvlVYbKlpJlMBpTHZtVOxpZUCCQTiQUlPjhTbnUu4tU1bGLILDMuwwLEtxJfTjw0ArBXLpA==",
+      "type": "package",
+      "path": "play.common/1.0.0",
+      "files": [
+        ".nupkg.metadata",
+        "lib/net6.0/Play.Common.dll",
+        "play.common.1.0.0.nupkg.sha512",
+        "play.common.nuspec"
+      ]
+    },
     "SharpCompress/0.30.1": {
       "sha512": "XqD4TpfyYGa7QTPzaGlMVbcecKnXy4YmYLDWrU+JIj7IuRNl7DH2END+Ll7ekWIY8o3dAMWLFDE1xdhfIWD1nw==",
       "type": "package",
@@ -959,7 +985,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "MongoDB.Driver >= 2.19.2",
+      "Play.Common >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.2.3"
     ]
   },
@@ -984,6 +1010,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "H:\\NET.CORE\\packages": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -1002,9 +1029,9 @@
       "net6.0": {
         "targetAlias": "net6.0",
         "dependencies": {
-          "MongoDB.Driver": {
+          "Play.Common": {
             "target": "Package",
-            "version": "[2.19.2, )"
+            "version": "[1.0.0, )"
           },
           "Swashbuckle.AspNetCore": {
             "target": "Package",
