@@ -14,7 +14,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PLAY.INFARA", "PLAY.INFARA"
 		docker-compose.yml = docker-compose.yml
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Play.Inventory.Service", "Play.Inventory.Service\Play.Inventory.Service.csproj", "{530893E3-BC72-4113-8627-8A13CCEFDCE4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Play.Inventory.Service", "Play.Inventory.Service\Play.Inventory.Service.csproj", "{530893E3-BC72-4113-8627-8A13CCEFDCE4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Play.Catalog.Contracts", "Play.Catalog.Contracts\Play.Catalog.Contracts.csproj", "{6E03D754-93BA-417F-ACBA-B383D6EC3907}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -34,6 +36,10 @@ Global
 		{530893E3-BC72-4113-8627-8A13CCEFDCE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{530893E3-BC72-4113-8627-8A13CCEFDCE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{530893E3-BC72-4113-8627-8A13CCEFDCE4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E03D754-93BA-417F-ACBA-B383D6EC3907}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E03D754-93BA-417F-ACBA-B383D6EC3907}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E03D754-93BA-417F-ACBA-B383D6EC3907}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E03D754-93BA-417F-ACBA-B383D6EC3907}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -43,6 +49,7 @@ Global
 		{1A2BF064-451C-4238-A5A0-9321BB23A541} = {36827281-92F3-450A-8F2E-0BA78487E4D6}
 		{C56537AA-C8C4-4890-9AF4-A1D98CA04B90} = {36827281-92F3-450A-8F2E-0BA78487E4D6}
 		{530893E3-BC72-4113-8627-8A13CCEFDCE4} = {36827281-92F3-450A-8F2E-0BA78487E4D6}
+		{6E03D754-93BA-417F-ACBA-B383D6EC3907} = {36827281-92F3-450A-8F2E-0BA78487E4D6}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C55B751D-F371-4CDF-9FC9-930733E93222}

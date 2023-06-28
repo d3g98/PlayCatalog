@@ -8,13 +8,11 @@
     <dependencies>
       <group targetFramework="net6.0">
         <dependency id="MongoDB.Driver" version="2.19.2" exclude="Build,Analyzers" />
+        <dependency id="Newtonsoft.Json" version="13.0.3" exclude="Build,Analyzers" />
+        <dependency id="RabbitMQ.Client" version="6.5.0" exclude="Build,Analyzers" />
+        <dependency id="Swashbuckle.AspNetCore" version="6.2.3" exclude="Build,Analyzers" />
       </group>
     </dependencies>
-    <frameworkReferences>
-      <group targetFramework="net6.0">
-        <frameworkReference name="Microsoft.AspNetCore.App" />
-      </group>
-    </frameworkReferences>
   </metadata>
   <files>
     <file src="H:\NET.CORE\PlayCatalog\Play.Common\bin\Debug\net6.0\Play.Common.dll" target="lib\net6.0\Play.Common.dll" />
