@@ -1,7 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Play.Catalog.Contracts;
 using Play.Catalog.Serivce.Dtos;
 using Play.Catalog.Serivce.Entities;
-using Play.Catalog.Serivce.Repositories;
+using Play.Catalog.Serivce.RabbitMQ;
+using Play.Common;
 
 namespace Play.Catalog.Serivce.Controllers
 {
@@ -9,10 +11,12 @@ namespace Play.Catalog.Serivce.Controllers
     [ApiController]
     public class ItemsController : ControllerBase
     {
-        private readonly IItemsRepository _itemsRepository;
-        public ItemsController(IItemsRepository itemsRepository)
+        private readonly IRepository<Item> _itemsRepository;
+        private readonly IRabitMQProducer _rabitMQProducer;
+        public ItemsController(IRepository<Item> itemsRepository, IRabitMQProducer rabitMQProducer)
         {
             _itemsRepository = itemsRepository;
+            _rabitMQProducer = rabitMQProducer;
         }
 
         [HttpGet]
@@ -41,6 +45,9 @@ namespace Play.Catalog.Serivce.Controllers
                 CreatedDate = DateTimeOffset.UtcNow
             };
             await _itemsRepository.CreateAsync(item);
+
+            _rabitMQProducer.SendMessage(new CatalogItemCreated(item.Id, item.Name, item.Description));
+
             return CreatedAtAction(nameof(GetByIdAsync), new { id = item.Id }, item);
         }
 
@@ -57,6 +64,8 @@ namespace Play.Catalog.Serivce.Controllers
 
             await _itemsRepository.UpdateAsync(existingItem.Id, existingItem);
 
+            _rabitMQProducer.SendMessage(new CatalogItemUpdated(existingItem.Id, existingItem.Name, existingItem.Description));
+
             return NoContent();
         }
 
@@ -68,6 +77,8 @@ namespace Play.Catalog.Serivce.Controllers
             if (existingItem == null) return NotFound();
 
             await _itemsRepository.DeleteAsync(id);
+
+            _rabitMQProducer.SendMessage(new CatalogItemDeleted(existingItem.Id));
 
             return NoContent();
         }
