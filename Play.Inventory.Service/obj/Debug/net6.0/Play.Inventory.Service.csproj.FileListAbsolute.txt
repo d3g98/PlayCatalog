@@ -44,3 +44,9 @@ H:\NET.CORE\PlayCatalog\Play.Inventory.Service\bin\Debug\net6.0\ZstdSharp.dll
 H:\NET.CORE\PlayCatalog\Play.Inventory.Service\bin\Debug\net6.0\runtimes\linux\native\libmongocrypt.so
 H:\NET.CORE\PlayCatalog\Play.Inventory.Service\bin\Debug\net6.0\runtimes\osx\native\libmongocrypt.dylib
 H:\NET.CORE\PlayCatalog\Play.Inventory.Service\bin\Debug\net6.0\runtimes\win\native\mongocrypt.dll
+H:\NET.CORE\PlayCatalog\Play.Inventory.Service\bin\Debug\net6.0\Play.Catalog.Contracts.dll
+H:\NET.CORE\PlayCatalog\Play.Inventory.Service\bin\Debug\net6.0\Newtonsoft.Json.dll
+H:\NET.CORE\PlayCatalog\Play.Inventory.Service\bin\Debug\net6.0\RabbitMQ.Client.dll
+H:\NET.CORE\PlayCatalog\Play.Inventory.Service\bin\Debug\net6.0\System.Threading.Channels.dll
+H:\NET.CORE\PlayCatalog\Play.Inventory.Service\bin\Debug\net6.0\Play.Catalog.Contracts.pdb
+H:\NET.CORE\PlayCatalog\Play.Inventory.Service\bin\Debug\net6.0\Play.Common.pdb

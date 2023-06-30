@@ -42,11 +42,11 @@ namespace Play.Common.MongoDb
             await dbCollection.InsertOneAsync(entity);
         }
 
-        public async Task UpdateAsync(Guid id, T entity)
+        public async Task UpdateAsync(T entity)
         {
             if (entity == null) throw new ArgumentNullException(nameof(entity));
 
-            FilterDefinition<T> filter = filterBuilder.Eq(entity => entity.Id, id);
+            FilterDefinition<T> filter = filterBuilder.Eq(item => item.Id, entity.Id);
 
             await dbCollection.ReplaceOneAsync(filter, entity);
         }

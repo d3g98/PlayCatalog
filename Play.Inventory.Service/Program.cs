@@ -1,12 +1,13 @@
-using Microsoft.Extensions.DependencyInjection;
 using Play.Common.MongoDb;
+using Play.Inventory.Service;
 using Play.Inventory.Service.Clients;
 using Play.Inventory.Service.Entities;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.AddMongo()
-    .AddMongoRepository<InventoryItem>("inventoryItems");
+    .AddMongoRepository<InventoryItem>("inventoryItems")
+    .AddMongoRepository<CatalogItem>("catalogItems");
 
 // Add services to the container.
 builder.Services.AddHttpClient<CatalogClient>(client => {
@@ -23,6 +24,8 @@ builder.Services.AddControllers(options => {
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+builder.Services.AddRabbitMQConsumer();
 
 var app = builder.Build();
 

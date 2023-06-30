@@ -1,4 +1,5 @@
 using Play.Catalog.Serivce.Entities;
+using Play.Catalog.Serivce.RabbitMQ;
 using Play.Common.MongoDb;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -7,7 +8,7 @@ builder.AddMongo()
     .AddMongoRepository<Item>("items");
 
 // Add services to the container.
-//builder.Services.AddScoped<IRabitMQProducer, RabitMQProducer>();
+builder.Services.AddScoped<IRabitMQProducer, RabitMQProducer>();
 
 builder.Services.AddControllers(options => {
     options.SuppressAsyncSuffixInActionNames = false;
