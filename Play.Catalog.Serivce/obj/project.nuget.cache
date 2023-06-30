@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "XWomtgG5kkYVy4epYyBWVE7tCRFk8STQYjG9v7svfESpEYc4UDczUCgAe5EYhW6Mh/b3m9eb3+xkTiBbK6cBow==",
+  "dgSpecHash": "wcJE6ZWnyvC5QizSr6D5Nir7WrxSwROkf+AdDhFRBZ9PwGfTbzXcOwmsyBlrAtMtXWbAEKvj/VTKZaIq/nJrNw==",
   "success": true,
   "projectFilePath": "H:\\NET.CORE\\PlayCatalog\\Play.Catalog.Serivce\\Play.Catalog.Serivce.csproj",
   "expectedPackageFiles": [
@@ -31,6 +31,7 @@
     "C:\\Users\\DuongNN\\.nuget\\packages\\system.security.principal.windows\\5.0.0\\system.security.principal.windows.5.0.0.nupkg.sha512",
     "C:\\Users\\DuongNN\\.nuget\\packages\\system.threading.channels\\7.0.0\\system.threading.channels.7.0.0.nupkg.sha512",
     "C:\\Users\\DuongNN\\.nuget\\packages\\zstdsharp.port\\0.6.2\\zstdsharp.port.0.6.2.nupkg.sha512",
+    "C:\\Users\\DuongNN\\.nuget\\packages\\play.catalog.contracts\\1.0.0\\play.catalog.contracts.1.0.0.nupkg.sha512",
     "C:\\Users\\DuongNN\\.nuget\\packages\\play.common\\1.0.0\\play.common.1.0.0.nupkg.sha512"
   ],
   "logs": []

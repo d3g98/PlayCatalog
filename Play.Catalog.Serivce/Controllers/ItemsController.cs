@@ -62,7 +62,7 @@ namespace Play.Catalog.Serivce.Controllers
             existingItem.Description = updateItemDto.Description;
             existingItem.Price = updateItemDto.Price;
 
-            await _itemsRepository.UpdateAsync(existingItem.Id, existingItem);
+            await _itemsRepository.UpdateAsync(existingItem);
 
             _rabitMQProducer.SendMessage(new CatalogItemUpdated(existingItem.Id, existingItem.Name, existingItem.Description));
 

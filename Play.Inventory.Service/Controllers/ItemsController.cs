@@ -63,7 +63,7 @@ namespace Play.Inventory.Service.Controllers
             else
             {
                 inventoryItem.Quantity += grantItemsDto.Quantity;
-                await _itemRepository.UpdateAsync(inventoryItem.Id, inventoryItem);
+                await _itemRepository.UpdateAsync(inventoryItem);
             }
 
             return Ok();
